@@ -10,15 +10,14 @@
 <body>
 <script type="text/javascript">
 var arr = prompt('enter your name');
-var names = ['Andrew', 'Lena', 'John', 'Linda', 'Dmitriy'];
-names[i] = prompt('enter your name');
-var i = 0;
-if (names[i]==arr) { 
-  alert('Hello' + arr);
-} else {
-  alert ('wrong');
-}
-  
+var names = [];
+names.push(arr);
+names = prompt('enter your name', 'Andrew');
+names = prompt('enter your name', 'Lena');
+	prompt('enter your name', 'John');
+	prompt('enter your name', 'Linda');
+	prompt('enter your name', 'Dmitriy');
+	
 </script>
 </body>
 </html>

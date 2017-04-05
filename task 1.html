@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css">
+
+		<title>Task 1 module 4</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+var div = document.createElement('h1');
+div.className= 'block';
+div.style.textAlign = 'center';
+div.style.fontWeight = 'normal';
+div.innerHTML = 'Тест по программированию';
+document.body.appendChild(div);
+
+var head = document.createElement('ol');
+head.innerHTML = 'Вопрос №1';
+document.body.appendChild(head);
+
+
+var quest = document.createElement('li');
+quest.innerHTML = 'Вариант ответа №1';
+quest.className= 'option';
+document.body.appendChild(quest);
+
+var x = document.createElement('input');
+    x.type = 'radio';
+   quest.appendChild(x);
+
+var quest1 = quest.cloneNode(true);
+quest1.innerHTML = 'Вариант ответа №2';
+document.body.appendChild(quest1);
+
+var quest3 = document.createElement('li');
+quest3.innerHTML = 'Вариант ответа №3';
+document.body.appendChild(quest3);
+
+var head2 = document.createElement('ol');
+head2.innerHTML = 'Вопрос №2';
+document.body.appendChild(head2);
+
+var quest = document.createElement('li');
+quest.innerHTML = 'Вариант ответа №1';
+document.body.appendChild(quest);
+var quest1 = quest.cloneNode(true);
+quest1.innerHTML = 'Вариант ответа №2';
+document.body.appendChild(quest1);
+var quest3 = document.createElement('li');
+quest3.innerHTML = 'Вариант ответа №3';
+document.body.appendChild(quest3);
+
+var head3 = document.createElement('ol');
+head3.innerHTML = 'Вопрос №3';
+document.body.appendChild(head3);
+
+var quest = document.createElement('li');
+quest.innerHTML = 'Вариант ответа №1';
+document.body.appendChild(quest);
+var quest1 = quest.cloneNode(true);
+quest1.innerHTML = 'Вариант ответа №2';
+document.body.appendChild(quest1);
+var quest3 = document.createElement('li');
+quest3.innerHTML = 'Вариант ответа №3';
+document.body.appendChild(quest3);
+
+var btn = document.createElement("BUTTON");
+btn.style.marginLeft = '35%';  
+btn.style.padding = '10px';     
+var t = document.createTextNode("Проверить мои результаты");  
+btn.appendChild(t);                               
+document.body.appendChild(btn);
+</script>
+</body>
+</html>

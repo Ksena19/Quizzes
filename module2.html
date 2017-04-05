@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css">
+
+		<title>Module 2</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	function pow(x, y) {
+    var result = 1;
+	for (var i = 0; i < y; i++) {
+		result *=x;
+	}
+	return result;
+}
+	var x = prompt("x?", "");
+	var y = prompt("y?", "");
+	if (y < 0) {
+		alert('stepen ' + y + 'ne poddezrhivaietsia')
+	} else {
+		alert ( pow(x, y) );
+	}
+</script>
+</body>
+</html>

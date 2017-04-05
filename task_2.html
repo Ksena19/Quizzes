@@ -22,45 +22,20 @@
 //   }
 
 
-
+var names = [];
 // 1 - Циклом заполнить массив с помощью команды prompt в котором будет список из 5-ти любых имен
-
-var names = []; // создаем пустой массив
-
-// 2 - вызываем 5 раз prompt и сохраняем в массив
-
-var nawName = prompt('введите имя'); // вызываем окно
-names.push(nawName) // сохраняем имя
-
-var nawName = prompt('введите имя'); // вызываем окно
-names.push(nawName) // сохраняем имя
-
-var nawName = prompt('введите имя'); // вызываем окно
-names.push(nawName) // сохраняем имя
-
-var nawName = prompt('введите имя'); // вызываем окно
-names.push(nawName) // сохраняем имя
-
-var nawName = prompt('введите имя'); // вызываем окно
-names.push(nawName) // сохраняем имя
-
-alert(names);
-
-// либо сделать это циклом(что конечно же лучше делать)
-/*
 
 
 for (var i = 0; i <= 4; i++) {
-	var nawName = prompt('введите имя'); // вызываем окно
-	names.push(nawName) // сохраняем имя
+  var nawName = prompt('введите имя'); // вызываем окно
+  names.push(nawName) // сохраняем имя
+if (nawName == names) {
+alert(nawName, 'вы успешно вошли');
+} else {
+alert ('ошибка');
 }
 
-alert(names);
-
-*/ 
-
-
-
+}
 
 
 </script>

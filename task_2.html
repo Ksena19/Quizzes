@@ -27,14 +27,25 @@ var names = [];
 
 
 for (var i = 0; i <= 4; i++) {
-  var nawName = prompt('введите имя'); // вызываем окно
-  names.push(nawName) // сохраняем имя
-if (nawName == names) {
-alert(nawName, 'вы успешно вошли');
-} else {
-alert ('ошибка');
+  var nawName = prompt('введите имя'); 	// вызываем окно
+  names.push(nawName) 					// сохраняем имя
+} 										// первый цикл закрываем, тут просто сохраняем имена
+
+
+var nameToCheck = prompt('введите имя что бы войти'); // теперь принимаем имя
+
+var userName = false; //----------------- переменная куда мы запишем совпавшее имя (по дефолту его нет)
+for (var i = 0; i < names.length; i++) { //-- и теперь во втором цикле перебираем все имена в массиве, и с каждым сравниваем
+	if(names[i] === nameToCheck){    //-- если есть совпадение - записываем
+		userName = nameToCheck;		
+	}
 }
 
+console.log(names, userName);
+if(userName != false){  //-------------------- в зависимости есть ли у нас имя, показываем ошибку
+	alert( userName + ' , вы успешно вошли');
+}else{
+	alert('Ошибка');
 }
 
 

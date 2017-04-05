@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css">
+
+		<title>Task 2</title>
+</head>
+
+<body>
+<script type="text/javascript">
+// 	var arr = ['Andrew', 'Lena', 'John', 'Linda', 'Dmitriy'];
+// var a = prompt("Enter your name");
+// for ( i = 0; i < arr.length; i++);
+// if (arr == a) {
+//     alert( a + " вы успешно вошли! ");
+// } else{
+//     alert("Ошибка");
+// }
+
+// var arr = ['Andrew', 'Lena', 'John', 'Linda', 'Dmitriy'];
+// var name = prompt("Введите имя для входа");
+
+// for (var i = 0; i < 5; i++) {
+  
+// if (arr[i] == a) {
+//     alert( a + " вы успешно вошли! ");
+// } else{
+//     alert("Ошибка");
+// }
+// }
+var arr = ['Андрей','Петр','Алексей'],
+        a = prompt("Enter your name"),
+    i = 0;
+while (i < arr.length) {
+  if (a == arr[i]) {
+    alert("Ошибка");
+    // return a;
+  } else if(a !== arr[i] && i === (arr.length-1)){
+    alert( a + " вы успешно вошли! ");
+    arr.push(a);
+    console.log(arr);
+    // return false;
+  }
+  i++;
+}
+
+</script>
+</body>
+</html>

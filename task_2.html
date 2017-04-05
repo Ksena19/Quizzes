@@ -9,14 +9,16 @@
 
 <body>
 <script type="text/javascript">
-var arr = prompt('enter your name');
+var arr = prompt('enter your name', 'Andrew', 'Lena', 'John', 'Linda', 'Dmitriy');
 var names = [];
 names.push(arr);
-names.push('Andrew');
-names.push('Lena');
-names.push( 'John');
-names.push('Linda');
-names.push('Dmitruy');
+
+
+if (names == arr) {
+    alert( arr + " вы успешно вошли! ");
+} else{
+    alert("Ошибка");
+  }
 
 </script>
 </body>

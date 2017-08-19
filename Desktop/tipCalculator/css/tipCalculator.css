@@ -1,0 +1,19 @@
+body { 
+	background: url('../img/background.jpg') center center no-repeat;
+	background-size: cover;
+ }
+h1 {
+	text-align: center;
+}
+#calc {
+		margin-left: 40%;
+		color: #fff;
+		font-size: 30px;
+
+}
+input {
+	margin-bottom: 20px; 
+	margin-top: 30px;
+	height: 30px;
+	width: 70px;
+}
